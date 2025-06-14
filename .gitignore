@@ -1,1 +1,5 @@
 venv/
+
+# SQLite db files
+*.db
+*.sqlite3
