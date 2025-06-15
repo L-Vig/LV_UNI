@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>LV_UNI</title>
+        <link rel="stylesheet" href=" url_for('static', filename='styles.css') ">
+    </head>
+    <body>
+        {% block header %}
+            <div id="header_section">
+                <div class="header_alt" id="home_button">
+                    <button>Home</button>
+                </div>
+                <div class="header_alt" id="task_manager">
+                    <button>Task Manager</button>
+                </div>
+                <div class="header_alt" id="event_planner">
+                    <button><a href="/eventPlanner">Event Planner</a></button>
+                </div>
+            </div>
+        {% endblock %}
+        
+        {% block main %}
+            <p>Main content here</p>
+        {% endblock %}
+        
+        {% block footer %}
+            <p>Footer content here</p>
+        {% endblock %}
+    </body>
+</html>
